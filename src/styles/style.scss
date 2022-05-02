@@ -1,0 +1,14 @@
+@use "./abstracts/" as *;
+@use "./base/" as *;
+
+body {
+  background-color: $red;
+}
+
+p {
+  font-size: $font-size;
+}
+
+h1 {
+  color: white;
+}

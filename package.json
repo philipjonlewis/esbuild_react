@@ -1,0 +1,25 @@
+{
+  "name": "esbuild_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "esbuild.js",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@chialab/esbuild-plugin-html": "^0.15.14",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "esbuild-register": "^3.3.2",
+    "esbuild-sass-plugin": "^2.2.6",
+    "esbuild-serve": "^1.0.1"
+  }
+}
