@@ -21,6 +21,8 @@ $colors: (
   "brown": #795548,
   "grey": #9e9e9e,
   "blue-grey": #607d8b,
+  "black": black,
+  "white": white,
 );
 
 // Make for multiple color schemes!
@@ -80,6 +82,14 @@ $colors: (
       }
     }
   }
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
 }
 
 // Error / Alert Colors
