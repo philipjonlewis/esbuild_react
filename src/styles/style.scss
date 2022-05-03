@@ -50,8 +50,19 @@ img {
     background-color: blue;
     width: 100vw;
   }
+  @include xx {
+    background-color: indigo;
+    width: 100vw;
+  }
 
   @include breakpoint(1440px) {
     background-color: pink;
   }
+}
+
+.trial-class {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
 }

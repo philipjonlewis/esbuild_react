@@ -1,9 +1,10 @@
 $breakpoints: (
   "xs": 0,
-  "sm": 480px,
-  "md": 720px,
-  "lg": 960px,
-  "xl": 1200px,
+  "sm": 320px,
+  "md": 480px,
+  "lg": 720px,
+  "xl": 960px,
+  "xx": 1200px,
 );
 
 @mixin xs {
@@ -32,6 +33,12 @@ $breakpoints: (
 
 @mixin xl {
   @media (min-width: map-get($breakpoints,"xl")) {
+    @content;
+  }
+}
+
+@mixin xx {
+  @media (min-width: map-get($breakpoints,"xx")) {
     @content;
   }
 }

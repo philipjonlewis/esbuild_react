@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import "./styles/style.scss";
 
 const app = () => {
+  const names = ["philip", "daylinda", "echavez", "albert"];
+
   return (
     <div>
       <div className="navbar mb-r justify-space-between">
@@ -13,33 +15,19 @@ const app = () => {
       </div>
       <div className="container responsive-test">
         <h2 className="mb-2">Grid System</h2>
-        <div className="row gap-2 justify-center">
-          <div className="col-xs-12 col-sm-4 col-xl-3">
-            <div className="card">
-              <h3 className="card-title">Hello Ninjas</h3>
-              <p className="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-
-          <div className="col-xs-12 col-sm-4 col-xl-3">
-            <div className="card">
-              <h3 className="card-title">Hello Ninjas</h3>
-              <p className="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-
-          <div className="col-xs-12 col-sm-4 col-xl-3">
-            <div className="card">
-              <h3 className="card-title">Hello Ninjas</h3>
-              <p className="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
+        <div className="row gap-1 justify-content-end">
+          {names.map((name) => {
+            return (
+              <div className="col-xs-12 col-sm-6 col-md-4 col-xl-6">
+                <div className="card">
+                  <h3 className="card-title">Hello {name}</h3>
+                  <p className="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
