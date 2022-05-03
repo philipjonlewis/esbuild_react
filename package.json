@@ -5,6 +5,7 @@
   "main": "esbuild.js",
   "type": "module",
   "scripts": {
+    "postbuild": "purgecss --css public/*.css --content public/index.html public/*.js --output public",
     "build": "node esbuild.config.js"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
     "@types/react-dom": "^18.0.3",
     "esbuild-register": "^3.3.2",
     "esbuild-sass-plugin": "^2.2.6",
-    "esbuild-serve": "^1.0.1"
+    "esbuild-serve": "^1.0.1",
+    "purgecss": "^4.1.3"
   }
 }

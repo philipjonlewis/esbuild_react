@@ -6,6 +6,7 @@ await esbuild
   .build(
     {
       entryPoints: ["./src/index.tsx"],
+      // entryNames: "[ext]-[hash]",
       outdir: "public",
       bundle: true,
       watch: {
@@ -24,7 +25,7 @@ await esbuild
     },
     {
       loader: "css",
-      minify: true,
+      minify: false,
     }
   )
 
